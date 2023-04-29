@@ -20,6 +20,34 @@ Or install it yourself as:
 
 ## Usage
 
+### Estonia
+
+Identity code format is `GYYMMDDSSSC`
+
+* `G` – gender
+* `YYMMDD` – date of birth
+* `SSS` – serial number
+* `C` – checksum
+
+More info: https://www.id.ee/en/
+
+```bash
+irb -I lib
+require 'e-id'
+
+Eid::Estonia.new(50001029996).valid?
+=> true
+
+Eid::Estonia.new(50001029996).gender
+=> :female
+
+Eid::Estonia.new(50001029996).birth_date
+=> #<Date: 2000-01-02 ((2451546j,0s,0n),+0s,2299161j)>
+
+Eid::Estonia.new(50001029996).age
+=> 23
+```
+
 ## Development
 
 Build docker container with compose:
