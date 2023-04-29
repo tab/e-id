@@ -1,0 +1,7 @@
+services:
+  e-id:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/package
