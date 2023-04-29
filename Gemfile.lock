@@ -30,14 +30,14 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
-    rubocop (1.48.1)
+    rubocop (1.50.2)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
-      rubocop-ast (>= 1.26.0, < 2.0)
+      rubocop-ast (>= 1.28.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.28.0)
@@ -60,6 +60,7 @@ GEM
     unicode-display_width (2.4.2)
 
 PLATFORMS
+  x86_64-linux
   x86_64-linux-musl
 
 DEPENDENCIES
@@ -67,7 +68,7 @@ DEPENDENCIES
   e-id!
   rake (~> 13.0.6)
   rspec (~> 3.12.0)
-  rubocop (~> 1.48.1)
+  rubocop (~> 1.50.2)
   rubocop-performance (~> 1.16.0)
   rubocop-rspec (~> 2.19.0)
   simplecov (~> 0.22.0)
