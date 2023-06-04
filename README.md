@@ -2,21 +2,34 @@
 
 Electronic identity in Estonia and in other countries
 
+## Supported countries
+
+- [x] Estonia
+- [x] Finland
+- [ ] Sweden
+- [x] Lithuania
+- [ ] Latvia
+- [ ] Denmark
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'e-id', '~> 0.1.0'
+gem 'e-id', '~> 0.2.0'
 ```
 
 And then execute:
 
-    $ bundle
+```bash
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install e-id
+```bash
+gem install e-id
+```
 
 ## Usage
 
