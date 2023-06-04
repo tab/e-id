@@ -3,13 +3,13 @@
 module Eid
   class Estonia < Core
     # NOTE: identity GYYMMDDSSSC
-    # G – gender
+    # G – gender (even for female, odd for male)
     # YYMMDD – date of birth
     # SSS – serial number
     # C – checksum
 
     def valid?
-      identity.size == 11 && birth_date.is_a?(Date)
+      valid_format? && birth_date.is_a?(Date)
     end
 
     def female?
@@ -20,21 +20,17 @@ module Eid
       identity[0].to_i.odd?
     end
 
-    def gender
-      female? ? :female : :male
-    end
-
     def birth_date
       Date.new((century + identity[1..2].to_i), identity[3..4].to_i, identity[5..6].to_i)
     rescue StandardError
       nil
     end
 
-    def age
-      Date.today.year - birth_date&.year.to_i
-    end
-
     private
+
+    def valid_format?
+      identity.match?(/\d{11}/) && identity.size == 11
+    end
 
     def century
       case identity[0].to_i
