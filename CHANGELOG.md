@@ -1,5 +1,9 @@
 # Change log
 
+## v0.3.0
+
+* Support Latvia identity codes
+
 ## v0.2.0
 
 * Support Finland and Lithuania identity codes

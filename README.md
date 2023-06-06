@@ -16,7 +16,7 @@ Electronic identity in Estonia and in other countries
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'e-id', '~> 0.2.0'
+gem 'e-id', '~> 0.3.0'
 ```
 
 And then execute:
