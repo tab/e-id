@@ -8,7 +8,7 @@ Electronic identity in Estonia and in other countries
 - [x] Finland
 - [ ] Sweden
 - [x] Lithuania
-- [ ] Latvia
+- [x] Latvia
 - [ ] Denmark
 
 ## Installation

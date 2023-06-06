@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'date'
+
 module Eid
   class Core
     attr_accessor :identity
